@@ -8,7 +8,7 @@ const path = require('path')
 
 
 const corsConfig = {
-    value : ['http://localhost:3000/']
+    value : ['http://localhost:3000/','https://social-pedia-frontend-appliction.vercel.app/']
 }
 
 
