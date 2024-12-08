@@ -1,6 +1,6 @@
 const express = require('express');
 const dotenv = require('dotenv');
-const dbConnection = require('../server/dbConnection/dbConnection')
+const dbConnection = require('./dbConnection/dbConnection')
 const getRouters = require('./MVC/ROUTERS/routers');
 const cros = require('cors');
 const path = require('path')
