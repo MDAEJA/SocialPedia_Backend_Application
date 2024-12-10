@@ -240,7 +240,7 @@ const userLike = async (req, res) => {
       }
   
       const post = await postModel.findById(postId); // Find the post by postId
-  
+      const userInfo = await userModel.findById(userId)
       if (!post) {
         return res.status(404).json({
           status: false,
@@ -252,6 +252,7 @@ const userLike = async (req, res) => {
       const newComment = {
         userId,
         comment,
+        userName : userInfo.firstName
       };
   
       post.comments.push(newComment); // Add the comment to the array
